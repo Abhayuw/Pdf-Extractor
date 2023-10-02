@@ -16,7 +16,7 @@ const { firebaseAuthMiddleware } = require('firebase-admin-auth');
 const uploadRoutes = require('./routes/protected-upload');
 app.use('/upload-protected', uploadRoutes); // Define the base URL for the upload routes
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 // Allow requests from http://localhost:3001
 app.use(cors({ origin: 'http://localhost:3001' }));
 // Middleware for JSON parsing
