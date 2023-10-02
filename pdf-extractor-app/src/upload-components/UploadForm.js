@@ -26,7 +26,7 @@ function UploadForm() {
     formData.append('pdfFile', selectedFile);
 
     // Send the file to the backend using fetch
-    fetch('http://localhost:3000/upload-shared/upload-shared/', {
+    fetch('https://mern-pdf-extractor.onrender.com/upload-shared/upload-shared/', {
       method: 'POST',
       body: formData,
     })

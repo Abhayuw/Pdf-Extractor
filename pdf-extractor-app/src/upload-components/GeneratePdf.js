@@ -14,7 +14,7 @@ function GeneratePdf({uploadFile}) {
     // Create a comma-separated string of selected pages
     const pageNumbers = selectedPages.join(',');
     // Create the URL with query parameters
-    const apiUrl =`http://localhost:3000/retrieve-pages/retrieve-pages?filename=${uploadFile.name}&pageNumbers=${pageNumbers}`;
+    const apiUrl =`https://mern-pdf-extractor.onrender.com/retrieve-pages/retrieve-pages?filename=${uploadFile.name}&pageNumbers=${pageNumbers}`;
     console.log(apiUrl)
     console.log(uploadFile.name)
    // Make the GET request
