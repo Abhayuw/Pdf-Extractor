@@ -17,8 +17,8 @@ const uploadRoutes = require('./routes/protected-upload');
 app.use('/upload-protected', uploadRoutes); // Define the base URL for the upload routes
 
 const port = process.env.PORT || 10000;
-// Allow requests from http://localhost:3001
-app.use(cors({ origin: 'http://localhost:3001' }));
+// Allow requests from client-side-vercel
+app.use(cors({ origin: 'https://pdf-extractor-lsct.vercel.app' }));
 // Middleware for JSON parsing
 app.use(express.json());
 
