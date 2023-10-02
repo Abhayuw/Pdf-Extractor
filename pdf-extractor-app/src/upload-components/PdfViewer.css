@@ -1,0 +1,30 @@
+/* Hide the text layer of react-pdf */
+.react-pdf__Page__textContent {
+    display: none;
+  }
+.react-pdf__Page__annotations {
+    display: none;
+}
+  /* Style for the PDF viewer container */
+.pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for individual PDF page thumbnails */
+.pdf-thumbnail {
+    
+    padding-bottom: 0%;
+    width: 150px; /* Adjust the width of each thumbnail as desired */
+    border: 1px solid #000000; /* Add a border to each thumbnail */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 5px; /* Adjust margin spacing as desired */
+  }
+  .thumbnail_container{
+    margin: 5px;
+  }
+  .For_page>{
+    padding:10%;
+    margin: 10%;
+  }
+  

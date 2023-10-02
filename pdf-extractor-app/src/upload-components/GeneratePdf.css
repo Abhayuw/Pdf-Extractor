@@ -1,0 +1,20 @@
+.Generate_btn>*{
+   border: 2px solid rgb(0, 0, 0); 
+   border-radius: 3px;
+   margin: 4%;
+   font-size: 20px;
+   background-color: transparent;
+   font-weight:550;
+   box-shadow: 2px 1px 0px 0px #00000068;
+   
+}
+.Generate_btn>*:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Slight background color on hover */
+    border-color: #000; /* Border color change on hover */
+    color: #333; /* Darker text color on hover */
+  }
+.page_no_display{
+margin-top: 1%;
+font-size: 17px;
+font-weight:550;
+}

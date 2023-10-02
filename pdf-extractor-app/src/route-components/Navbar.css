@@ -1,0 +1,47 @@
+.Navbar{
+    height: 5vh;
+    width: 100%;
+      /* position: -webkit-sticky; /* Safari */
+      /* position: sticky; */ 
+      position: relative;
+      top: 2%;
+      
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      background-color: transparent;
+      z-index: 5;
+      
+    }
+   .Home_btn{
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        margin-top:0%;
+         
+       }
+    .Login_btn,.Account_btn{
+        position:inherit;
+        top: 1px; 
+        
+    }   
+    .Navbar>* {
+      display: flex;
+      padding: 0 4px;
+      margin: 2px;
+      border: 1px solid rgb(0, 0, 0);
+      height: 90%;
+      text-align: center;
+      align-items: center;
+      font-size: 15px;
+      
+      background-color: transparent;
+      font-weight: bold;
+      box-shadow: 2px 2px 0px 0px #00000068;
+      
+    }
+    .Navbar >*:hover {
+        background-color: rgba(0, 0, 0, 0.2); /* Slight background color on hover */
+        border-color: #000; /* Border color change on hover */
+        color: #333; /* Darker text color on hover */
+      }
