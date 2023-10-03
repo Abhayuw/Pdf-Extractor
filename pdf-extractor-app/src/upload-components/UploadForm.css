@@ -3,20 +3,55 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 2vh;
+}
+
+.Footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.Footer>* {
+    text-align:center;
+    margin: 3.3vw;
+    max-width: 40vw;
+    
+}
+.Footer p{
+    font-size:0.9em;
+    
+}
+@media (max-width: 768px) {
+    .Footer {
+      flex-wrap: wrap;
+     }
+    
+}
+@media (max-width: 425px) {
+    .Footer>*{
+      max-width: 100vw;
+     }
+    
 }
 
 .Form_header{
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 1), rgba(240, 240, 240, 1)); /* Define the radial gradient */
+    background-color:rgb(112,90,220);
+    box-shadow: 0px 0px 10px #252525, 0px 0px 0px #252525, 0px 0px 0px #252525, 2px 2px 5px #252525, 0px 0px 0px #252525, 0px 0px 0px #252525;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 30vh;
-    width: 50vw;
-    border-top: 3px dotted black;
-    border-bottom: 3px double black;
-    border-left: 3px double black;
-    border-right: 3px dashed black;
+    width: 77vw;
+    margin-top: 10vh;
+    border-top: 3px dotted rgb(255, 255, 255);
+    border-bottom: 3px double rgb(255, 255, 255);
+    border-left: 3px double rgb(255, 255, 255);
+    border-right: 3px dashed rgb(252, 252, 252);
 }
 .Form_header>*{
     display: flex;
@@ -34,19 +69,27 @@
     
 } 
 .Choose_file_label{
-    border: 2px solid black;
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 2%;
     display: inline-block;
     padding: 0.5%;
+    text-align: center;
     cursor: pointer;
     
 }
 .Choose_file_label:hover {
-    background-color: rgba(0, 0, 0, 0.2); /* Slight background color on hover */
+    background-color: rgba(66, 66, 66, 0.2); /* Slight background color on hover */
     border-color: #000; /* Border color change on hover */
-    color: #333; /* Darker text color on hover */
+    color: #000000; /* Darker text color on hover */
   }
 
 input[type="file"] {
     display: none;
+}
+.Form_container p{
+    text-align: center;
+    margin-top: -1.5vh;
+    font-size: 0.89em;
 }
